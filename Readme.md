@@ -1,7 +1,7 @@
 Nombre Alumno: Gerson Urrea
 
+<img width="549" alt="Captura de pantalla 2023-10-16 013750" src="https://github.com/Gerson-art/Ayudantia_Receso_Viaje/assets/138271596/2e9ed5d7-8265-42c5-a459-25974fbd0dbb">
 
-<img width="569" alt="Captura de pantalla 2023-10-16 003730" src="https://github.com/Gerson-art/Ayudantia_Receso_Viaje/assets/138271596/bcb126ba-0e3b-4042-9109-a07c32403ecf">
 
 Análisis del diagrama
 
