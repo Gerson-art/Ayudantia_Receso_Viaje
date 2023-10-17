@@ -26,41 +26,50 @@ public class Menu {
                 nombre = sc.nextLine();
                 this.stringvalidator.esStringValido(nombre);
                 valorvalid = true;
+
             } catch (ExcepcionString r) {
                 System.err.println(r.getMessage());
                 sc.nextLine();}
-            try {
-                System.out.println("Ingresa tu destino:");
-                destino = sc.nextLine();
-                this.stringvalidator.esStringValido(destino);
-                valorvalid = true;
-            } catch (ExcepcionString a) {
-                System.err.println(a.getMessage());
-                sc.nextLine();
-            }
-            try{
-                System.out.println("Ingresa la distancia a la cual se encuentra tu destino: ");
-                distancia = sc.nextDouble();
-                valorvalid = true;
-            } catch (InputMismatchException e) {
-                System.err.println("Ingresa un valor válido para la distancia");
-                sc.nextLine();
-            }
-            try{
-                System.out.println("Seleccione la opcion asociada al medio de transporte que desea utilizar para llegar a "+destino);
-                System.out.println("1. Motocicleta");
-                System.out.println("2. Automovil");
-                System.out.println("3. Bicicleta");
-                System.out.println("4. Salir");
-                opcion = sc.nextInt();
-                valorvalid = true;
-            } catch (InputMismatchException e1) {
-                System.err.println("Ingresa un valor válido para la opcion elegida");
-                sc.nextLine();
-            }
-
-        }while(!valorvalid);
-        valorvalid = false;
+            }while(!valorvalid);
+            valorvalid = false;
+            do {
+                try {
+                    System.out.println("Ingresa tu destino:");
+                    destino = sc.nextLine();
+                    this.stringvalidator.esStringValido(destino);
+                    valorvalid = true;
+                } catch (ExcepcionString a) {
+                    System.err.println(a.getMessage());
+                    sc.nextLine();
+                }
+            } while (!valorvalid);
+            valorvalid = false;
+            do {
+                try {
+                    System.out.println("Ingresa la distancia a la cual se encuentra tu destino: ");
+                    distancia = sc.nextDouble();
+                    valorvalid = true;
+                } catch (InputMismatchException e) {
+                    System.err.println("Ingresa un valor válido para la distancia");
+                    sc.nextLine();
+                }
+            } while (!valorvalid);
+            valorvalid = false;
+            do {
+                try {
+                    System.out.println("Seleccione la opcion asociada al medio de transporte que desea utilizar para llegar a " + destino);
+                    System.out.println("1. Motocicleta");
+                    System.out.println("2. Automovil");
+                    System.out.println("3. Bicicleta");
+                    System.out.println("4. Salir");
+                    opcion = sc.nextInt();
+                    valorvalid = true;
+                } catch (InputMismatchException e1) {
+                    System.err.println("Ingresa un valor válido para la opcion elegida");
+                    sc.nextLine();
+                }
+            } while (!valorvalid);
+            valorvalid = false;
                 switch (opcion) {
                     case 1:
                         Persona persona = new Persona(nombre);
@@ -85,11 +94,5 @@ public class Menu {
                         System.out.println("No ha seleccionado una opcion valida");
 
                 }
-
-
-
-
-
-
     }
 }
