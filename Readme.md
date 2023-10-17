@@ -19,4 +19,6 @@ Estas clases fueron implementadas debido a que la responsabilidad del cálculo d
 
 Relaciones de dependencia existentes
 
-Persona-Clases Vehículos: Existen relaciones de dependencia entre la clase Persona y las clases Vehículos, ya que los métodos de la clase Persona reciben como parametro objetos de las clases vehículos, respectivamente.
+Persona-Clases Vehículos (Por ingreso de parametro): Existen relaciones de dependencia entre la clase Persona y las clases Vehículos, ya que los métodos de la clase Persona reciben como parametro objetos de las clases vehículos, respectivamente.
+
+Menu-Persona,Clases Vehículos, StringValidator (instanciación de objetos dentro de un método): Existen relaciones de dependencia entre las clases mencionadas y la clase Menu, debido a que dentro del método "menu" se instancian y utilizan objetos de estas clases.
