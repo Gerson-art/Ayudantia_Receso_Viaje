@@ -46,7 +46,7 @@ public class Menu {
             valorvalid = false;
             do {
                 try {
-                    System.out.println("Ingresa la distancia a la cual se encuentra tu destino: ");
+                    System.out.println("Ingresa la distancia (en kilometros) a la cual se encuentra tu destino: ");
                     distancia = sc.nextDouble();
                     valorvalid = true;
                 } catch (InputMismatchException e) {
